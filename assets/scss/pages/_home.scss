@@ -1,0 +1,219 @@
+#about {
+    width: 70%;
+    margin-left: auto;
+    border-bottom: 1px solid gray;
+    padding: 30px;
+}
+
+#barbershop {
+    width: 70%;
+    margin-left: auto;
+}
+
+.barbershop_image {
+    width: 100%;
+
+    img {
+        max-height: 80vh;
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
+.about {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 100%;
+
+}
+
+
+
+.about_text_header {
+    h1 {
+        text-align: center;
+    }
+
+    font-size: 40px;
+}
+
+.about_text_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 26px;
+    }
+}
+
+#styles {
+display: none;
+    width: 70%;
+    margin-left: auto;
+}
+
+.styles {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.styles_list {
+    display: flex;
+    justify-content: center;
+}
+
+.styles_list_item {
+    display: flex;
+    gap: 20px;
+}
+
+.big_box_hair {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.big_box_beard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.big_box_mustache {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box_hair{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+    width: 80%;
+    margin:auto;
+  
+border: 5px solid black;
+   }
+   .box_mustache{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+    width: 80%;
+    margin:auto;
+  
+border: 5px solid black;
+   }
+   .box_beard{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+    width: 80%;
+    margin:auto;
+  
+border: 5px solid black;
+   }
+.box_text_hair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 50%;
+}
+.box_text_mustache{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 50%;
+}
+.box_text_beard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 50%;
+}
+.box_image_hair{
+    width: 50%;
+    min-height: 40vh;
+
+    img {
+        height: 40vh;
+        object-fit: fill;
+        width: 100%;
+    }
+}
+.box_image_mustache{
+    width: 50%;
+    min-height: 40vh;
+
+    img {
+        height: 40vh;
+        object-fit: fill;
+        width: 100%;
+    }
+}
+.box_image_beard{
+    width: 50%;
+    min-height: 40vh;
+
+    img {
+        height: 40vh;
+        object-fit: fill;
+        width: 100%;
+    }
+}
+
+.beard{
+    display: none;
+}
+.hair{
+    display: block;
+}
+.mustache{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #about {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about_text {
+        width: 100%;
+    }
+
+    #barbershop {
+        width: 100%;
+        margin: 0;
+    }
+   
+   #styles{
+    width: 100%;
+    margin: 0;
+   }
+}

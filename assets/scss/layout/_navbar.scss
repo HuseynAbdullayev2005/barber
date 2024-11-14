@@ -1,0 +1,134 @@
+nav {
+
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: #000000;
+    color: white;
+
+    .navbar {
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+
+        .navbar_header {
+            font-size: 20px;
+        }
+
+        .navbar_body {
+            font-size: 20px;
+
+            .navbar_list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+    }
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+}
+
+.navbar_menu {
+    display: none;
+}
+
+li:hover {
+    color: rgb(255, 196, 0);
+    font-size: 24px;
+    transition: 1s ease-in-out;
+    animation: rotateli 1s infinite;
+}
+
+@keyframes rotateli {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: scale(1);
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: scale(1.1);
+        transform: rotate(-2deg);
+    }
+
+}
+
+.navbar_body_hidden {
+    display: none;
+}
+
+.navbar_body_hidden_click {
+    border: 1px solid gray;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 100%;
+    z-index: 1;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+
+    .navbar_list_hidden {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        height: 100px;
+        width: 100%;
+        position: static;
+        background-color: #000000;
+        color: white;
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+            align-items: center;
+
+            .navbar_body {
+                display: none;
+            }
+
+            .navbar_menu {
+                display: block;
+            }
+        }
+
+    }
+
+
+
+}

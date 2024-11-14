@@ -1,0 +1,160 @@
+#workers{
+    width: 70%;
+    margin-left: auto;
+    display:none;
+    .workers{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .workers_upper{
+            font-size: 40px;
+            h1{
+               text-align: center;
+            }
+        }
+        
+       
+        .worker{
+            display: flex;
+            flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            width: 28%;
+            border: 3px solid black;
+            
+            .worker_image{
+                width: 100%;
+                min-height: 40vh;
+            
+                img {
+                    height: 40vh;
+                    object-fit: fill;
+                    width: 100%;
+                }
+            }
+            .worker_details{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            min-height: 20vh;
+            }
+        }
+
+    }
+}
+
+.workers_list{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.worker_name{
+    display: flex;
+    gap: 5px;
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.worker_rating{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .worker_rating_text{
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+       
+    }
+    .worker_rating_icons{
+        color: yellow;
+    }
+}
+
+@media (max-width: 768px){
+    #workers{
+        width: 100%;
+        margin: 0;
+        .workers{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .workers_upper{
+                font-size: 40px;
+                h1{
+                   text-align: center;
+                }
+            }
+            
+           
+            .worker{
+                width: 95%;
+                
+                .worker_image{
+                    width: 100%;
+                    min-height: 40vh;
+                
+                    img {
+                        height: 40vh;
+                        object-fit: fill;
+                        width: 100%;
+                    }
+                }
+                .worker_details{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                min-height: 20vh;
+                }
+            }
+    
+        }
+    }
+    
+    .workers_list{
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+       
+        gap: 50px;
+    }
+    
+    .worker_name{
+        display: flex;
+        gap: 5px;
+        p{
+            font-size: 40px;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    .worker_rating{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .worker_rating_text{
+            p{
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+            }
+           
+        }
+        .worker_rating_icons{
+            font-size: 24px;
+            color: yellow;
+        }
+    }
+
+}
